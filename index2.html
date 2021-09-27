@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href=shared.css>
+    <link rel="stylesheet" href=style.css>
+    <title>Document</title>
+</head>
+<body>
+   <div class="backdrop"></div>
+    <header class="main-header">
+  <div>
+   <button class="toggle-button">
+      <span class="toggle-button__bar"></span>
+      <span class="toggle-button__bar"></span>
+      <span class="toggle-button__bar"></span>
+  </button>
+    <a href="index2.html" class="main_heading" style="text-decoration: none;">
+        <!-- <img src="logo2.png" alt="uhost- your favrt company" class="logo"> -->
+    <h1 class="logo_h1">THE CRAFT</h1>
+    </a> 
+</div>
+      <nav class="navigation">
+        
+        
+        
+         <!--  Elements and their Content -->
+     <ul class="list-elements">
+      <li class="list-element">          
+         <div class="dropdown">
+            <button class="dropbtn">HOME</button>
+            <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            </div>
+         </div>
+         </li>
+
+         <li class="list-element">          
+            <div class="dropdown">
+               <button class="dropbtn2">HEADERS</button>
+               <div class="dropdown-content">
+               <a href="#">Link 1</a>
+               <a href="#">Link 2</a>
+               <a href="#">Link 3</a>
+               </div>
+            </div>
+         </li>
+         <li class="list-element">          
+            <div class="dropdown">
+               <button class="dropbtn2">PAGES</button>
+               <div class="dropdown-content">
+               <a href="#">Link 1</a>
+               <a href="#">Link 2</a>
+               <a href="#">Link 3</a>
+               </div>
+            </div>
+         </li>
+            <li class="list-element">          
+               <div class="dropdown">
+                  <button class="dropbtn2">PORTFOLIO</button>
+                  <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                  </div>
+               </div>
+            </li>
+            <li class="list-element">          
+               <div class="dropdown">
+                  <button class="dropbtn2">BLOG</button>
+                  <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                  </div>
+               </div>
+            </li>
+            <li class="list-element">          
+               <div class="dropdown">
+                  <button class="dropbtn2">SHOP</button>
+                  <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                  </div>
+               </div>
+            </li>
+            <li class="list-element">          
+               <div class="dropdown">
+                  <button class="dropbtn2">ELEMENTS</button>
+                  <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                  </div>
+               </div>
+            </li>
+     </ul>
+
+     <!-- END -->
+
+     <!-- Cart-->
+
+     <div class="icon-cart" style="clear: left; float: left">
+      <div class="cart-line-1" style="background-color: rgb(146, 141, 141)"></div>
+      <div class="cart-line-2" style="background-color: rgb(146, 141, 141)"></div>
+      <div class="cart-line-3" style="background-color: rgb(146, 141, 141)"></div>
+      <div class="cart-wheel" style="background-color: rgb(146, 141, 141)"></div>
+    </div>
+    <!-- End -->
+
+
+   <!-- Search -->
+    <div class="container">
+      <input type="text" placeholder="Search...">
+      <div class="search"></div>
+    </div>
+
+       <!-- End -->
+   </nav>
+</header>
+
+<nav class="mobile-nav">
+   <ul class="mobile-nav__items">
+      <li class="mobile-nav__item">          
+         <div class="dropdown">
+            <button class="dropbtn">HOME</button>
+            <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            </div>
+         </div>
+         </li>
+
+         <li class="mobile-nav__item">          
+            <div class="dropdown">
+               <button class="dropbtn2">HEADERS</button>
+               <div class="dropdown-content">
+               <a href="#">Link 1</a>
+               <a href="#">Link 2</a>
+               <a href="#">Link 3</a>
+               </div>
+            </div>
+         </li>
+         <li class="mobile-nav__item">          
+            <div class="dropdown">
+               <button class="dropbtn2">PAGES</button>
+               <div class="dropdown-content">
+               <a href="#">Link 1</a>
+               <a href="#">Link 2</a>
+               <a href="#">Link 3</a>
+               </div>
+            </div>
+         </li>
+            <li class="mobile-nav__item">          
+               <div class="dropdown">
+                  <button class="dropbtn2">PORTFOLIO</button>
+                  <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                  </div>
+               </div>
+            </li>
+            <li class="mobile-nav__item">          
+               <div class="dropdown">
+                  <button class="dropbtn2">BLOG</button>
+                  <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                  </div>
+               </div>
+            </li>
+            <li class="mobile-nav__item">          
+               <div class="dropdown">
+                  <button class="dropbtn2">SHOP</button>
+                  <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                  </div>
+               </div>
+            </li>
+            <li class="mobile-nav__item">          
+               <div class="dropdown">
+                  <button class="dropbtn2">ELEMENTS</button>
+                  <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                  </div>
+               </div>
+            </li>
+              <!-- Cart-->
+      <li class="mobile-nav__item">    
+     <div class="icon-cart-2" style="clear: left; float: left">
+      <div class="cart-line-4" style="background-color: rgb(146, 141, 141)"></div>
+      <div class="cart-line-5" style="background-color: rgb(146, 141, 141)"></div>
+      <div class="cart-line-6" style="background-color: rgb(146, 141, 141)"></div>
+      <div class="cart-wheel-7" style="background-color: rgb(146, 141, 141)"></div>
+    </div>
+    </li>
+    <!-- End -->
+
+
+   <!-- Search -->
+   <li class="mobile-nav__item">    
+    <div class="container-2">
+      <input type="text" placeholder="Search...">
+      <div class="search-2"></div>
+    </div>
+    </li>
+
+       <!-- End -->
+     </ul>
+
+</nav>
+<!-- header end here -->
+
+<!-- Main section starts -->
+<main>
+<section>
+  <div class="slider">
+   <div class="slides">
+     <!--radio buttons start-->
+     <input type="radio" name="radio-btn" id="radio1">
+     <input type="radio" name="radio-btn" id="radio2">
+     <input type="radio" name="radio-btn" id="radio3">
+     <!--radio buttons end-->
+     <!--slide images start-->
+   
+  
+     <div class="slide first">
+         <img src="image/image1.jpg" alt="" class="slide-img"/>
+         <h1 class="p1">Want More?    
+            <br>
+            Lets Find out more Craft. </h1>
+       </div>
+   
+       <div class="slide">
+      <img src="image/image2.jpg" alt="" class="slide-img"/>
+      <h1 class="p2">Not Inspired?
+         <br>
+          Create Business</h1>
+       </div>
+    <div class="slide">
+         <img src="image/image3.jpg" alt="" class="slide-img"/>
+         <h1 class="p3">Discover more Craft
+            <br>
+            Let's go for it
+         </h1>
+       </div>
+    <!--slide images end-->
+     <!--automatic navigation start-->
+     <div class="navigation-auto">
+       <div class="auto-btn1"></div>
+       <div class="auto-btn2"></div>
+       <div class="auto-btn3"></div>
+      
+     </div>
+     <!--automatic navigation end-->
+   </div>
+   <!--manual navigation start-->
+   <div class="navigation-manual">
+     <label for="radio1" class="manual-btn"></label>
+     <label for="radio2" class="manual-btn-2"></label>
+     <label for="radio3" class="manual-btn"></label>
+
+   </div>
+   <!--manual navigation end-->
+ </div>
+ <!--image slider end-->
+</section>
+
+<!-- Icon section Start-->
+<section>
+  <button class="Icon-eye"><i class="fa fa-eye"></i></button> 
+   <div class="Heading">
+      <article class="Heading-1">
+        <h1 class="main-heading">Creative Designs</h1>
+        <ul class="Heading-items">
+         <li class="Heading-item">Lorem ipsum dolor sit amet</li>
+         <li class="Heading-item">Lorem ipsum dolor sit amet</li>
+         <li class="Heading-item">Lorem ipsum dolor sit amet</li>
+         <li class="Heading-item">Lorem ipsum dolor sit amet</li>
+     </ul>
+        
+      </article>
+     <button class="Icon-angel"> <i class="fa fa-angellist"></i></button>
+      <article class="Heading-1 ">
+         <h1 class="main-heading">Brilliant Code</h1>
+          <ul class="Heading-items">
+              <li class="Heading-item">Lorem ipsum dolor sit amet</li>
+              <li class="Heading-item">Lorem ipsum dolor sit amet</li>
+              <li class="Heading-item">Lorem ipsum dolor sit amet</li>
+              <li class="Heading-item">Lorem ipsum dolor sit amet</li>
+          </ul>
+        
+      </article>
+      <button class="Icon-question"><i class="fa fa-question-circle"></i> </button>
+      <article class="Heading-1">
+         <h1 class="main-heading">Premium Support</h1>
+         <ul class="Heading-items">
+            <li class="Heading-item">Lorem ipsum dolor sit amet</li>
+            <li class="Heading-item">Lorem ipsum dolor sit amet</li>
+            <li class="Heading-item">Lorem ipsum dolor sit amet</li>
+            <li class="Heading-item">Lorem ipsum dolor sit amet</li>
+        </ul>
+      </article>
+      <button class="Icon-leaf"><i class="fa fa-leaf" ></i></button>
+      <article class="Heading-1">
+         <h1 class="main-heading">Experienced Team</h1>
+         <ul class="Heading-items">
+            <li class="Heading-item">Lorem ipsum dolor sit amet</li>
+            <li class="Heading-item">Lorem ipsum dolor sit amet</li>
+            <li class="Heading-item">Lorem ipsum dolor sit amet</li>
+            <li class="Heading-item">Lorem ipsum dolor sit amet</li>
+        </ul>
+     </article>
+  </div>
+      
+</section>
+<!-- Icon section End -->
+
+  <section>
+  <div class="main_heading_2">
+
+      <h1 class="heading__2">
+         PRICING PLANS
+     </h1>
+    <p class="paragraph__heading__2">LOOKING DOWN INTO THE DARK GULF BELOW I COULD SEE A 
+      RUDDY  <br>LIGHT STREAMING THROUGH A RIFT IN THE CLOUDS.</p>
+      </div> 
+      <div class="plan_margin">
+       
+        
+          <article class="plan">
+          <div class="plan-silver">
+                Silver
+             </div>
+            
+              <h2 class="plan__price">$12/month</h2>
+            
+              <ul  class="plan__features">
+               <li class="plan__feature">5 Free Business</li>
+               <li class="plan__feature">2 GB Space</li>
+               <li class="plan__feature">Unlimited Drinks</li>
+               <li class="plan__feature">Free Domain Inclided</li>
+               <li class="plan__feature">200 Emails</li>
+               <li class="plan__feature">Unlimited Free Lifetime Support</li>
+              </ul>
+              <div>
+                  <button class="plan--button">CHOOSE PLAN</button>
+              </div>
+          </article>
+          <article class="plan plan--highlighter ">
+            <div class="plan-silver plan-gold">
+               Gold
+            </div>
+              <h2 class="plan__price plan--highlighter__price">$25/month</h2>
+       
+              <ul class="plan__features">
+                  <li class="plan__feature">5 Free Business</li>
+                  <li class="plan__feature">8 GB Space</li>
+                  <li class="plan__feature">Unlimited Drinks</li>
+                  <li class="plan__feature">Free Domain Inclided</li>
+                  <li class="plan__feature">250 Emails</li>
+                  <li class="plan__feature">Unlimited Free Lifetime Support</li>
+              </ul>
+              <div>
+                  <button class="plan--button  plan--highlighter__button">CHOOSE PLAN</button>
+              </div>
+          </article>
+          <article class="plan">
+            <div class="plan-silver">
+               Platinum
+            </div>
+              <h2 class="plan__price">$55/month</h2>
+        
+              <ul  class="plan__features">
+               <li class="plan__feature">5 Free Business</li>
+               <li class="plan__feature">8 GB Space</li>
+               <li class="plan__feature">Unlimited Drinks</li>
+               <li class="plan__feature">Free Domain Inclided</li>
+               <li class="plan__feature">350 Emails</li>
+               <li class="plan__feature">Unlimited Free Lifetime Support</li>
+              </ul>
+              <div>
+                  <button class="plan--button">CHOOSE PLAN</button>
+              </div>
+          </article>
+      </div>
+ 
+</section>
+<section>
+   <div class="about">
+      <article class="about__container">
+      <h1 class="h1__about">
+      ABOUT US
+      </h1>
+      <p class="about__paragraph">
+         By the same illusion which lifts the horizon of the sea to the level of the the sable cloud <br>
+         beneath was dished out and the car seemed to float in the middle of an dark. By the same<br>
+         illusion which lifts the horizon of the sea to the level of the the sable cloud beneath was <br>
+         dished out and the car seemed to float in the middle of an dark. By the same illusion which<br>
+         lifts the horizon of the sea to the level of the the sable cloud.
+      </p>
+   </article>
+      <div class="rating">
+         <ul class="rating_list">
+          <li class="rating_1">Marketing </li>
+                  <li class="rating_2">Development </li>
+              <li class="rating_3">Design </li>
+             
+            </ul>
+      </div>
+      <div>
+         <ul class="percentage_container">
+            <li class="percentage-1">70%</li>
+            <li class="percentage-2">80%</li>
+            <li class="percentage-3">90%</li>
+         </ul>
+      </div>
+   </div>
+
+</section>
+
+<section class="project_section">
+   <div class="projects">
+      <h1 class="project_heading">
+      BEST PROJECTS
+      </h1>
+      <p class="project_para">
+         LOOKING DOWN INTO THE DARK GULF BELOW I COULD SEE A RUDDY <br>
+         LIGHT STREAMING THROUGH A RIFT IN THE CLOUDS.
+      </p>
+   </div>
+</section>
+   <section>
+     <div>
+      <div class="carousel" data-flickity='{ "wrapAround": true }'> 
+         
+             <div class="carousel-cell">
+               <a href="../projects/index.html">
+                  <button class="flickity_button"><img class="w3-image" src="flickity images/beauty.jpg" ></button>
+         </a>
+         <a href="../projects/index.html" class="web">Website Creation</a>
+             </div>
+          
+             <div class="carousel-cell">
+               <a href="../projects/stylish.html">
+                  <button class="flickity_button"> <img class="w3-image" src="flickity images/desk.jpg" ></button>
+            </a>
+            <a href="../projects/stylish.html" class="stylish">Stylish Creation</a>
+                </div>
+             
+                <div class="carousel-cell">
+                  <a href="../projects/Creative.html">
+                     <button class="flickity_button"> <img class="w3-image" src="flickity images/mountain.jpg"></button>
+               </a>
+               <a href="../projects/Creative.html" class="creative">Creative Minds</a>
+                   </div>
+         
+                   <div class="carousel-cell">
+                     <a href="../projects/imaginative.html">
+                        <button class="flickity_button"> <img class="w3-image" src="flickity images/text.jpg"></button>
+                  </a>
+                  <a href="../projects/imaginative.html" class="imagi">Imaginative Creation</a>
+                      </div>
+                
+                      <div class="carousel-cell">
+                        <a href="../projects/true.html">
+                           <button class="flickity_button"> <img class="w3-image" src="flickity images/water.jpg" ></button>
+                     </a>
+                     <a href="../projects/true.html" class="tr">True Creation</a>
+                         </div>
+                  
+                         <div class="carousel-cell">
+                           <a href="../projects/creativelooks.html">
+                              <button class="flickity_button"> <img class="w3-image" src="logo2.png"></button>
+                            </a>
+                            <a href="../projects/creativelooks.html" class="creat">Creative Looks</a>
+                            </div>
+                       
+          </div>
+        </div>
+   </section> 
+   <section>
+      <i class="fa fa-th-large"></i>
+      <div class="Button_of_project">
+         <a href="index2.html">
+         <button class="Button_project">Discover all Projects</button>
+      </a>
+      </div>
+   </section>
+   <section>
+      <div class="testimonials">
+         <h1 class="testimonial_heading">
+       Testimonials
+         </h1>
+         <p class="testimonial_para">
+            LOOKING DOWN INTO THE DARK GULF BELOW I COULD SEE A RUDDY <br>
+            LIGHT STREAMING THROUGH A RIFT IN THE CLOUDS.
+         </p>
+      </div>
+      
+   </section>
+   <section>
+     
+<div class="slideshow-container">
+
+   <div class="mySlides">
+     <q>I love you the more in that I believe you <br>
+      had liked me for my own sake and for nothing <br>
+      else Lorem ipsum  Lorem ipsum  Lorem ipsum<br>
+      Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem <br>
+      ipsum</q>
+      <img src="testimonial Images/user1.jpg" style="height:100px; width:100px " class="testimonial-img">
+     <p class="author">-Ryan Keats</p>
+   </div>
+   
+   <div class="mySlides">
+     <q>I love you the more in that I believe you <br>
+      had liked me for my own sake and for nothing <br>
+      else Lorem ipsum  Lorem ipsum  Lorem ipsum<br>
+      Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem <br>
+      ipsum</q>
+      <img src="testimonial Images/user2.jpg " style="height:100px; width:100px " class="testimonial-img">
+     <p class="author">-Ernest Hemingway</p>
+   </div>
+   
+   <div class="mySlides">
+     <q>I love you the more in that I believe you <br>
+      had liked me for my own sake and for nothing <br>
+      else Lorem ipsum  Lorem ipsum  Lorem ipsum<br>
+      Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem <br>
+      ipsum.</q>
+      <img src="testimonial Images/user3.jpg" style="height:100px; width:100px " class="testimonial-img">
+     <p class="author">-Thomas A. Edison</p>
+   </div>
+   
+   <a class="prev" onclick="plusSlides(-1)">❮</a>
+   <a class="next" onclick="plusSlides(1)">❯</a>
+   
+   </div>
+   
+</main>
+     
+   </section>
+   <section>
+     
+      <footer class="main__footer">
+         <div class="control_main">
+         <a href="index2.html" class="main_heading" style="text-decoration: none;">
+            <h1 class="logo_h2">THE CRAFT</h1></a> 
+           <p class="logo_para"> Looking down into the dark gulf below I <br>
+              could see a ruddy light streaming through <br>
+              a rift in the clouds spectator on a hillside<br>
+               ceased to twinkle light sea.
+         </p>
+      <div class="social-media_icons">
+        <button class="social"> <i class="fa fa-facebook-square"></i></button>
+        <button class="social"><i class="fa fa-twitter-square"></i></button>
+        <button class="social"> <i class="fa fa-pinterest-square"></i></button>
+        <button class="social"> <i class="fa fa-linkedin"></i></button>
+      </div>
+      <div class="post_tags_gallery">
+         <div class="popular_section">
+         <h1 class="popular_h1" >
+            Popular Tags
+         </h1>
+         <article class="buttons_cluster">
+         <button class="business">BUSINESS</button>
+         <button class="corpo">CORPORATE</button>
+         <button class="desi">DESIGN</button>
+         <button class="log">LOGO</button><br>         
+         <button class="develop">DEVELOPMENT</button>
+         <button class="enter">ENTERTAINMENT</button>
+         <button class="fash">FASHION</button><br>
+         <button class="mon">MONEY</button>
+         <button class="multi">MULTIPURPOSE</button>
+         <button class="multi">TEAM</button>
+         <button class="log">LOGO</button><br>
+         <button class="mon">MONEY</button>
+         <button class="multi">MULTIPURPOSE</button>
+         <button class="multi">TEAM</button>
+         </article>
+      </div>
+      <div class="popular_section">
+         <h1 class="recent_h1" >
+            Recent Posts
+         </h1>
+         <article>
+            <p class="post_p">  OFFICERS FIRED AFTER <br>REMOVAL OF UNITED<br>
+               OCTOBER 3, 2017</p>
+               <p class="post_p_2"> OFFICERS FIRED AFTER<br> REMOVAL OF UNITED<br>
+                  OCTOBER 3, 2017</p>
+         </article>
+      </div>
+      <div class= "popular_section">
+         <h1 class="photo_h1" >
+            Photo Gallery
+         </h1>
+         <article>
+            <div class="photo_cell">
+               <img class="photo_image-1" src="flickity images/beauty.jpg" style="height:100px; width:100px;" >
+                </div>
+                <div class="photo_cell">
+                  <img class="photo_image-2" src="flickity images/desk.jpg" style="height:100px; width:100px;"  >
+                   </div>
+                   <div class="photo_cell">
+                     <img class="photo_image-3" src="flickity images/mountain.jpg" style="height:100px; width:100px;" >
+                      </div>
+                      <div class="photo_cell">
+                        <img class="photo_image-4" src="flickity images/text.jpg" style="height:100px; width:100px;" >
+                         </div>
+                         <div class="photo_cell">
+                           <img class="photo_image-5" src="flickity images/water.jpg" style="height:100px; width:100px;" >
+                            </div>
+                            <div class="photo_cell">
+                              <img class="photo_image-6" src="logo2.png" style="height:100px; width:100px;" >
+                            </div>
+         </article>
+         <i class="fa fa-copyright"></i>
+         <div class="copyright">
+            <h1 class="copy_head_1">
+            Copyright
+            </h1>
+            <h2  class="copy_head_2">
+               THE CRAFT
+            </h2>
+            <h3  class="copy_head_3">
+          All Rights Reserved
+            </h3>
+         </div>
+         <div>
+            <ul class="main-footer__link">
+                <li class="footer_list">
+                    <a href="#">About | </a>
+                </li>
+                <li class="footer_list">
+                    <a href="#">Terms | </a>
+                </li>
+                <li class="footer_list">
+                  <a href="#">Delivery | </a>
+              </li>
+              <li class="footer_list">
+               <a href="#">Services | </a>
+           </li>
+           <li class="footer_list">
+            <a href="#">Contacts</a>
+        </li>
+            </ul>
+         </div>
+         </div>
+      </footer>
+      </div>
+   </section>
+
+
+</body>
+
+
+<script src="http://www.jqueryscript.net/demo/jQuery-Plugin-For-Horizontal-Floating-Social-Share-Bar/js/jquery.floating-share.js" type="text/javascript"></script>
+<!-- <script src="js/jquery.floating-share.js" type="text/javascript"></script> -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+<script src="shared.js"></script>
+
+
+</html>

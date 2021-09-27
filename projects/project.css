@@ -1,0 +1,63 @@
+
+
+
+
+.web__creats{
+    height:120rem;
+}
+
+.web_creat{
+    color: grey;
+    background-color: #f7f7f7;
+    position: absolute;
+    left: 11px;
+    top: 80px;
+    margin: 2px 160px;
+    width: 99.90%;
+    padding: 28px 717px;
+    margin-left: -9px;
+    font-size: 20px;
+}
+.images__web{
+position:absolute;
+top:200px;
+padding: 30px 226px;
+}
+.image__web{
+    margin: 45px;
+    list-style-type: none;
+}
+
+.projecs_info{
+   position:absolute;
+   left:74rem;
+   top:16rem;
+   color:rgb(163, 162, 162);
+}
+
+.proec_info{
+list-style-type: none;
+}
+.fa-link{
+    position: absolute;
+    top: 839px;
+    font-size: 21px;
+    left: 7rem;
+    color: white;
+    z-index: 2;
+}
+.proec_button{
+    border: none;
+    background-color: #1a7dd7;
+    color: white;
+    width: 20rem;
+    height: 4rem;
+    position: absolute;
+    top: 51rem;
+    font-weight: bolder;
+    font-size: 12px;
+}
+.proec_button:hover,
+.proec_button:active{
+    background-color:rgb(59, 58, 58);
+}

@@ -1,0 +1,1288 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&family=Source+Code+Pro:wght@200&family=Yantramanav:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+}
+@media(max-width:1100px)and (min-width:600px){
+  html { 
+    zoom: .5; 
+  
+   
+   
+  }
+}
+
+
+html,body
+{
+    /* width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px; */
+    overflow-x: hidden; 
+}
+
+
+@media(max-width:40rem){
+  body{
+    /* overflow-y: scroll; /* has to be scroll, not auto */
+/* -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;  */
+    font-family: 'Mitr', sans-serif;
+   
+
+  }
+}
+
+
+.main-heading{
+  text-decoration: none;
+}
+.logo_h1{
+  position: relative;
+  top: 1px;
+  left: 147px;
+  width: 164px;
+  font-size: 26px;
+  text-align: center;
+  height: 69px;
+  color: #1a7dd7;
+  font-weight: bolder;
+  border: 5px solid grey;
+  padding: 4px;
+  box-shadow: 2px 1px 2px grey;
+}
+@media(min-width:40rem){
+  .logo_h1{
+    position:absolute;
+    top: 0rem;
+    left: 5rem;
+    width: 12rem;
+  }
+}
+
+
+
+.main-header{
+
+    background-color: white;
+    box-shadow: 2px 2px 4px 4px rgb(228, 225, 225);
+    height:6rem;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    position: fixed;
+    margin: 0;
+    left: 0;
+    top:0;
+    z-index:9;
+ 
+}
+
+
+
+:focus {
+  outline: none;
+}
+
+/* .logo {
+    width: 50px;
+    height: 50px;
+    padding: 2px 2px;
+    vertical-align: middle;
+    margin-left: 127px;
+   
+} */
+
+/*             ========================================================================                      */
+
+
+.backdrop{
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top:0;
+  left:0;
+  display:none; /*we didnot remove display from here becoz page will not work without it*/
+  opacity:0;
+  width:100vw;
+  height:100vh;
+  z-index: 100;
+  transition: opacity 0.2s linear;
+  
+}
+/* Nav bar starts from here */
+
+
+/* START..... we give height and width in navigation */
+
+
+
+.navigation{
+  /* height:17px;
+  width:1601px;
+  max-width:1500px;
+  display:none;
+  padding: 4px 210px; */
+  height: 1rem;
+    display: none;
+    padding: 2rem 17rem;
+  
+
+}
+@media(min-width:40rem){
+  .navigation{
+    display:block;
+  }
+}
+
+
+
+/* END..... */
+
+
+
+
+.list-elements{
+        /* padding-left: 0px; */
+    /* padding-right: 676px; */
+    height: 2rem;
+    /* width: 24px; */
+    /* margin-left: 225px; */
+    /* margin-right: 0px; */
+    /* margin-top: 0px; */
+    /* margin-bottom: 0px; */
+    display: flex;
+    /* font-size: 15px; */
+    /* font-weight: bold; */
+    margin: 0rem 8rem ;
+    
+
+}
+
+.list-element {
+
+  list-style-type: none;
+  margin: 0rem 0.5rem;
+
+
+
+  
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  margin-top: -1rem;
+  
+
+}
+.dropbtn {
+  
+  color:rgb(68, 67, 67);
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 0.8rem;
+  border: none;
+  background-color:white;
+}
+
+/* we used hover on first element drpbtn to change color */
+.dropbtn:hover,
+.dropbtn:active{
+  color:rgb(146, 141, 141);
+}
+
+
+.dropbtn2{
+  
+  color:rgb(146, 141, 141);
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 0.8rem;
+  border: none;
+  background-color:white;
+}
+
+
+
+/* we used hover on remaining elements of drpbtn to change color */
+.dropbtn2:hover,
+.dropbtn2:active{
+  color:rgb(68, 67, 67);
+}
+
+
+
+/* START... the content inside the nav bars */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(39, 38, 38);
+  min-width: 9rem;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 3rem;
+}
+
+/* END... */
+
+/* START... we add border bottom here in the content inside */
+.dropdown-content a {
+  color: grey;
+  padding: 12px 16px;
+  text-decoration: none;
+  border-bottom: 2px solid#1a7dd7 ;
+  display: block;
+  
+}
+/* END... */
+
+/* START... here we add border-bottom at the end of content */
+
+.dropdown-content:hover,
+.dropdown-content:active{
+  border-bottom: 2px solid#1a7dd7 ;
+
+}
+
+/* END... */
+
+/* START...here we change text-color of content by hover */
+
+.dropdown-content a:hover {
+  color:white;
+}
+
+/* END */
+
+
+/* content inside inline */
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+  
+ 
+} 
+
+/* Select form inspect from focus to remove outline and appearence */
+
+:focus {
+  outline: none;
+}
+
+button {
+  -webkit-appearance: none;
+}
+
+
+/*            END of element Contents           */
+
+
+
+
+
+
+/*    Cart start from here  */
+
+.icon-cart {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: relative;
+  overflow: hidden;
+  margin-left: 56rem;
+  margin-top: -2.3rem;
+    background-color: rgba(235, 235, 223, 0.397);
+}
+  
+.icon-cart-2 {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: relative;
+  overflow: hidden;
+  margin-left: -1rem;
+  margin-top: -1.3rem;
+    background-color: rgba(235, 235, 223, 0.397);
+}
+/* the elements of Cart from which it made are here */
+  
+  .icon-cart .cart-line-1 {
+    width: 15%;
+    height: 7%;
+    position: absolute;
+    left: 8%;
+    top: 25%;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg); 
+    background-color: #000;
+    border-bottom-left-radius: 35%;
+  }
+  .icon-cart-2 .cart-line-4 {
+    width: 15%;
+    height: 7%;
+    position: absolute;
+    left: 8%;
+    top: 25%;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg); 
+    background-color: #000;
+    border-bottom-left-radius: 35%;
+  }
+  .icon-cart .cart-line-2 {
+    width: 35%;
+    height: 7%;
+    position: absolute;
+    left: 6%;
+    top: 40%;
+    -webkit-transform: rotate(80deg);
+    -moz-transform: rotate(80deg);
+    -ms-transform: rotate(80deg);
+    transform: rotate(80deg); 
+    background-color: #000;
+  }
+  .icon-cart-2 .cart-line-5 {
+    width: 35%;
+    height: 7%;
+    position: absolute;
+    left: 6%;
+    top: 40%;
+    -webkit-transform: rotate(80deg);
+    -moz-transform: rotate(80deg);
+    -ms-transform: rotate(80deg);
+    transform: rotate(80deg); 
+    background-color: #000;
+  }
+  
+  .icon-cart .cart-line-2:before {
+    content: "";
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    left: 45%;
+    top: -280%;
+    -webkit-transform: rotate(-80deg);
+    -moz-transform: rotate(-80deg);
+    -ms-transform: rotate(-80deg);
+    transform: rotate(-80deg); 
+    background-color: inherit;
+  }
+  .icon-cart-2 .cart-line-5:before {
+    content: "";
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    left: 45%;
+    top: -280%;
+    -webkit-transform: rotate(-80deg);
+    -moz-transform: rotate(-80deg);
+    -ms-transform: rotate(-80deg);
+    transform: rotate(-80deg); 
+    background-color: inherit;
+  }
+  
+  .icon-cart .cart-line-2:after {
+    content: "";
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    left: 59%;
+    top: -670%;
+    background-color: inherit;
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg); 
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 25%;
+  }
+  .icon-cart-2 .cart-line-5:after {
+    content: "";
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    left: 59%;
+    top: -670%;
+    background-color: inherit;
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg); 
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 25%;
+  }
+  
+  .icon-cart .cart-line-3 {
+    width: 30%;
+    height: 7%;
+    position: absolute;
+    left: 33%;
+    top: 45%;
+    background-color: #000;
+  }
+  .icon-cart-2 .cart-line-6 {
+    width: 30%;
+    height: 7%;
+    position: absolute;
+    left: 33%;
+    top: 45%;
+    background-color: #000;
+  }
+  
+  .icon-cart .cart-line-3:after {
+    content: "";
+    width: 124%;
+    height: 100%;
+    position: absolute;
+    top: -150%;
+    left: -5%;
+    background-color: inherit;
+  }
+  .icon-cart-2 .cart-line-6:after {
+    content: "";
+    width: 124%;
+    height: 100%;
+    position: absolute;
+    top: -150%;
+    left: -5%;
+    background-color: inherit;
+  }
+  
+  .icon-cart .cart-wheel {
+    width: 12%;
+    height: 12%;
+    background-color: #000;
+    border-radius: 100%;
+    position: absolute;
+    left: 28%;
+    bottom: 20%;
+  }
+    
+  .icon-cart-2 .cart-wheel-7 {
+    width: 12%;
+    height: 12%;
+    background-color: #000;
+    border-radius: 100%;
+    position: absolute;
+    left: 28%;
+    bottom: 20%;
+  }
+  
+.icon-cart .cart-wheel:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 100%;
+    position: absolute;
+    left: 200%;
+    bottom: 0;
+  }
+
+  .icon-cart-2 .cart-wheel-7:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 100%;
+    position: absolute;
+    left: 200%;
+    bottom: 0;
+  }
+
+
+/* elements of cart ends here */
+
+
+
+/* Search Bar starts from here */
+
+
+  .container {
+    display:flex;
+    position: relative;
+    margin: auto;
+    top: -4.3rem;
+    left: 15rem;
+    width: 2rem;
+    height: 6rem;}
+
+
+    .container-2 {
+      display:flex;
+      position: relative;
+      margin: auto;
+      top: -1.3rem;
+      left: -20.8rem;
+      width: 2rem;
+      height: 6rem;}
+
+  /* This is the search (magnifying glass) which is on front end  */
+    .search {
+      position: absolute;
+      margin: auto;
+      top: -0.2rem;
+      right: 0;
+      bottom: 0;
+      left: 20rem;
+      width: 2rem;
+      height: 2rem;
+      background: rgba(235, 235, 223, 0.397);;
+      /* border-radius: 50%; */
+      transition: all 1s; 
+      /* this transition is for search (magnifying glass) and search bar on which user could write */
+      z-index: 4;
+      /* box-shadow: 0 0 25px 0 rgb(146, 141, 141);
+      box-shadow: 0 0 25px 0 rgb(146, 141, 141); */
+    }
+    .search-2 {
+      position: absolute;
+      margin: auto;
+      top: -0.2rem;
+      right: 0;
+      bottom: 0;
+      left: 20rem;
+      width: 2rem;
+      height: 2rem;
+      background: rgba(235, 235, 223, 0.397);;
+      /* border-radius: 50%; */
+      transition: all 1s; 
+      /* this transition is for search (magnifying glass) and search bar on which user could write */
+      z-index: 4;
+      /* box-shadow: 0 0 25px 0 rgb(146, 141, 141);
+      box-shadow: 0 0 25px 0 rgb(146, 141, 141); */
+    }
+      .search::before {
+        content: ""; 
+        /* this content is for circle of search  and the below is working on that cricle to adjust it*/
+        position: absolute;
+        margin: auto;
+        top: 0.2rem;
+        right: 1rem;
+        bottom: -0.4rem;
+        left: 1rem;
+        width: 0.6rem;
+        height: 0.1rem;
+        background: grey;
+        transform: rotate(45deg);
+        transition: all .5s;
+      }
+    
+      .search-2::before {
+        content: ""; 
+        /* this content is for circle of search  and the below is working on that cricle to adjust it*/
+        position: absolute;
+        margin: auto;
+        top: 0.2rem;
+        right: 1rem;
+        bottom: -0.4rem;
+        left: 1rem;
+        width: 0.6rem;
+        height: 0.1rem;
+        background: grey;
+        transform: rotate(45deg);
+        transition: all .5s;
+      }
+      .search::after {
+        content: "";
+        /* This is necessary for the pseudo element to work */
+         /* this content is for stick of search and below is working on it to adjust it*/
+        position: absolute;
+        margin: auto;
+        top: -0.2rem;
+        right: 0;
+        bottom: 0;
+        left: -0.3rem;
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius: 50%;
+        border: 2px solid grey;
+        transition: all .5s;
+      }
+      .search-2::after {
+        content: "";
+        /* This is necessary for the pseudo element to work */
+         /* this content is for stick of search and below is working on it to adjust it*/
+        position: absolute;
+        margin: auto;
+        top: -0.2rem;
+        right: 0;
+        bottom: 0;
+        left: -0.3rem;
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius: 50%;
+        border: 2px solid grey;
+        transition: all .5s;
+      }
+
+
+    /* from here the search bar which is input started from here */
+    
+    input {
+      font-family: 'Inconsolata', monospace;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: -41rem;
+      bottom: 0;
+      left: 0;
+      width: 15px;
+      height: 3rem;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid rgb(146, 141, 141);
+      /* background:  rgb(204, 201, 201); */
+      text-shadow: 0 0 10px grey;
+      padding: 0 80px 0 20px;
+      border-radius: 30px;
+      box-shadow: 0 0 25px 0 grey,
+                  0 20px 25px 0 rgb(146, 141, 141);
+      box-shadow: inset 0 0 25px 0 rgb(146, 141, 141);
+      transition: all 1s;
+      opacity: 0;
+      z-index: 5;
+      font-weight: bolder;
+      letter-spacing: 0.1em;}
+    
+    /* this input focus is for width of search bar and opacity for search bar to show it for 1 opacity */
+      input:focus {
+        width: 250px;
+        opacity: 1;
+        cursor: text;
+      }
+      /* END */
+
+      /* this input focus is for front end search(magnifying glass) that when search bar will open how far that (magnifying glass)  will go through right */
+      input:focus ~ .search {
+        /* right: -250px; */
+        background: rgba(235, 235, 223, 0.397);;
+        /* z-index: 6; */
+        /* this z index helps search (magnifying glass) to stay on screen  */
+      }
+      input:focus ~ .search-2 {
+        /* right: -250px; */
+        background: rgba(235, 235, 223, 0.397);;
+        /* z-index: 6; */
+        /* this z index helps search (magnifying glass) to stay on screen  */
+      }
+
+
+
+
+
+        /* input::before {
+          top: 0;
+          left: 0;
+          width: 25px;
+        }
+        input::after {
+          top: 0;
+          left: 0;
+          width: 25px;
+          height: 1px;
+          border: none;
+          background: white;
+          border-radius: 0%;
+          transform: rotate(-45deg);
+        } */
+
+
+
+        /* This is for text wriiten in input search bar */
+      
+      input::placeholder {
+        color: #1a7dd7;
+        opacity: 0.5;
+        font-weight: bolder;
+      }
+
+      .mobile-nav {
+        display: none;
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        left: 0;
+        background: white;
+        width: 80%;
+        height: 100vh;
+    
+      }
+    
+    
+      
+      .mobile-nav__items {
+        width: 90%;
+        height: 100%;
+        list-style: none;
+        margin: 0% auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+        align-items: center;
+      }
+      
+      .mobile-nav__item {
+        margin: 1.1rem 0;
+      }
+      
+      .mobile-nav__item a {
+        font-size: 1.5rem;
+      }
+.toggle-button {
+  position: absolute;
+  top: 20px;
+  left:44px;
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+ 
+}
+@media(min-width:40rem){
+  .toggle-button {
+    position: absolute;
+    top: 20px;
+      width: 3rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding-top: 0;
+      padding-bottom: 0;
+      vertical-align: middle;
+      /* margin-right: 150px; */
+  }
+}
+
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: black;
+  display: block;
+  margin: 0.6rem 0;
+
+}
+
+@media(min-width:40rem){
+  .toggle-button__bar{
+      display:none;
+  }
+}
+
+      /* END */
+
+/* Header end here */
+                                      /* ========================================================= */
+
+.last_section_footer{
+  background-color: rgb(42, 41, 41);
+  height: 30rem;
+  position: relative;
+  top: 45px;
+  margin-left: -20px;
+  margin: -6px -8px;
+  /* grid-area: footer; */
+
+}
+.post_tags_gallery{
+  display:inline-block;
+  margin-top: -167px;
+}
+.logo_h2{
+  position: relative;
+  top: 104px;
+  left: 433px;
+  color: #1a7dd7;
+  font-weight: bolder;
+  border: 5px solid grey;
+  padding: 4px;
+  box-shadow: 2px 1px 2px grey;
+  width:191px;
+  text-align: center;  
+  font-size: 32px;
+}
+@media(min-width:40rem){
+  .logo_h2{
+  
+    left: 421px;
+    width:225px;
+   
+  }
+}
+.logo_para{
+  color: grey;
+  margin-left: 422px;
+  margin-top: 125px;
+  word-spacing: -3px;
+  font-size: 13px;
+}
+.social-media_icons{
+  position: relative;
+  top: 29px;
+  width: 354px;
+  left: 437px;
+}
+
+.social{
+  background-color: rgb(49, 48, 48);
+  width: 36px;
+  height: 36px;
+  border:rgb(49, 48, 48);
+}
+.social:hover,
+.social:active{
+  background-color:#1a7dd7 ;
+}
+.fa-facebook-square{
+    position:absolute;
+    top: 10px;
+    left: 12px;
+    font-size: 16px;
+}
+
+
+
+
+.fa-twitter-square{
+  position:absolute;
+  top: 10px;
+  left: 54px;
+  font-size: 16px;
+
+}
+.fa-pinterest-square{
+  position:absolute;
+  top: 10px;
+  left: 94px;
+  font-size: 16px;
+
+
+}
+.fa-linkedin{
+  position:absolute;
+  top: 10px;
+  left: 138px;
+  font-size: 16px;
+
+}
+
+.buttons_cluster{
+  position: relative;
+  top: 112px;
+  left:-39px;
+  color: grey;
+}
+.business{
+  background-color: rgb(49, 48, 48);
+  border: 2px solid rgb(49, 48, 48);
+
+  height:33px;
+  margin: 5px 1px;
+  font-size: 9px;
+  color: white;
+}
+.business:hover,
+.business:active{
+  background-color: #1a7dd7;
+  color:white;
+}
+.corpo{
+  background-color: rgb(49, 48, 48);
+  border: 2px solid rgb(49, 48, 48);
+  font-size: 9px;
+  color: white;
+  height:33px;
+}
+.corpo:hover,
+.corpo:active{
+  background-color: #1a7dd7;
+  color:white;
+}
+.desi{
+  background-color: rgb(49, 48, 48);
+  border: 2px solid rgb(49, 48, 48);
+  font-size: 9px;
+  color: white;
+  height:33px;
+}
+.desi:hover,
+.desi:active{
+  background-color: #1a7dd7;
+  color:white;
+}
+.develop{
+  background-color: rgb(49, 48, 48);
+  border: 2px solid rgb(49, 48, 48);
+  font-size: 9px;
+  color: white;
+  height:33px;
+  margin: 5px 1px;
+}
+.develop:hover,
+.develop:active{
+  background-color: #1a7dd7;
+  color:white;
+}
+.enter{
+  background-color: rgb(49, 48, 48);
+  border: 2px solid rgb(49, 48, 48);
+  font-size: 9px;
+  color: white;
+  height:33px;
+}
+.enter:hover,
+.enter:active{
+  background-color: #1a7dd7;
+  color:white;
+}
+.fash{
+  background-color: rgb(49, 48, 48);
+  border: 2px solid rgb(49, 48, 48);
+  font-size: 9px;
+  color: white;
+  height:33px;
+}
+.fash:hover,
+.fash:active{
+  background-color: #1a7dd7;
+  color:white;
+}
+.log{
+  background-color: rgb(49, 48, 48);
+  border: 2px solid rgb(49, 48, 48);
+  font-size: 9px;
+  color: white;
+  height:33px;
+}
+.log:hover,
+.log:active{
+  background-color: #1a7dd7;
+  color:white;
+}
+.mon{
+  background-color: rgb(49, 48, 48);
+  border: 2px solid rgb(49, 48, 48);
+  font-size: 9px;
+  color: white;
+  height:33px;
+  margin: 5px 1px;
+}
+.mon:hover,
+.mon:active{
+  background-color: #1a7dd7;
+  color:white;
+}
+.multi{
+  background-color: rgb(49, 48, 48);
+  border: 2px solid rgb(49, 48, 48);
+  font-size: 9px;
+  color: white;
+  height:33px;
+}
+.mmulti:hover,
+.multi:active{
+  background-color: #1a7dd7;
+  color:white;
+}
+.popular_section{
+  padding:31px;
+  position:relative;
+  top: 185px;
+  left: 437px;
+  }
+@media(min-width:40rem){
+.popular_section{
+  display: inline-block;
+  top: -145px;
+  left: 835px;
+
+}
+}
+.popular_h1{
+  color:white;
+  font-size: 14px;
+  border-bottom: 2px solid #1a7dd7;
+  width:92px;
+  position: absolute;
+  top: 57px;
+
+}
+@media(min-width:40rem){
+  .popular_h1{
+    width:92px;
+  }
+}
+.recent_h1{
+  color:white;
+  font-size: 14px;
+  border-bottom: 2px solid #1a7dd7;
+  width:92px;
+  position: absolute;
+  top: 109px;
+}
+@media(min-width:40rem){
+  .recent_h1{
+    top: -63px;
+  }
+}
+.post_p{
+  color:grey;
+  font-size: 13px;
+  position:absolute;
+  top: 187px;
+  left:18px;
+  font-weight: bold;
+  width: 165px;
+
+}
+@media(min-width:40rem){
+  .post_p{
+    top: 21px;
+  }
+}
+.post_p:hover,
+.post_p:active{
+  color:#1a7dd7;
+}
+.post_p_2{
+  color:grey;
+  font-size: 13px;
+  position:absolute;
+  top: 262px;
+  left: 19px;
+  font-weight: bold;
+  width: 147px;
+}
+@media(min-width:40rem){
+  .post_p_2{
+    top: 105px;
+  }
+}
+.post_p_2:hover,
+.post_p_2:active{
+  color:#1a7dd7;
+}
+
+.photo_h1{
+  color:white;
+  font-size: 14px;
+  border-bottom: 2px solid #1a7dd7;
+  width:92px;
+  position: absolute;
+  top: 282px;
+  left: 27px
+}
+@media(min-width:40rem){
+  .photo_h1{
+    top: -85px;
+    left: 257px;
+    width: 25%;
+
+  }
+}
+
+.photo_cell{
+  position: relative;
+  top: 22rem;
+  left: -1rem;
+  margin: -50px 108px;
+}
+@media(min-width:40rem){
+  .photo_cell{
+
+    left: 200px;
+    top:0;
+  }
+}
+.photo_image-1{
+  position:absolute;
+  left: -188px;
+  top: 31px;
+}
+.photo_image-1:hover,
+.photo_image-1:active{
+  opacity:0.5;
+}
+.photo_image-2{
+  position: absolute;
+    left: -79px;
+    top: 31px;
+}
+.photo_image-2:hover,
+.photo_image-2:active{
+  opacity:0.5;
+}
+
+.photo_image-3{
+  position: absolute;
+    left: 27px;
+    top: 31px;
+
+}
+.photo_image-3:hover,
+.photo_image-3:active{
+  opacity:0.5;
+}
+.photo_image-4{
+  position: absolute;
+  left: -185px;
+  top: 145px;
+
+}
+.photo_image-4:hover,
+.photo_image-4:active{
+  opacity:0.5;
+}
+.photo_image-5{
+  position: absolute;
+  left: -78px;
+  top: 145px;
+}
+.photo_image-5:hover,
+.photo_image-5:active{
+  opacity:0.5;
+}
+
+.photo_image-6{
+  position: absolute;
+  left: 30px;
+  top: 143px;}
+
+  .photo_image-6:hover,
+  .photo_image-6:active{
+    opacity:0.5;
+  }
+
+
+.main-footer__link{
+  display: flex;
+  height: 0;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.main__footer{
+    background-color: rgb(20, 20, 20);
+    margin-left: -9px;
+    margin-top: 8px;
+    height: 77rem;
+    margin: 2px -8px;
+    position:relative;
+    top:24rem
+
+ 
+   
+}
+@media(min-width:40rem){
+
+.main__footer{
+ 
+  height: 29rem;
+  top: 2rem;
+}
+}
+.control_main{
+  position: relative;
+  left: -22rem;
+  width: 190%;
+  top: -2rem;
+}
+@media(min-width:40rem){
+  .control_main{
+ 
+    left: -7rem;
+    width: 149%;
+  
+  }
+}
+
+.fa-copyright{
+  color: grey;
+  font-size: 10px;
+  position: relative;
+  top: 38rem;
+  left: -4rem;
+}
+@media(min-width:40rem){
+  .fa-copyright{
+    top: 21rem;
+    left: -27rem;
+  }
+}
+.copyright{
+  display:flex;
+  position: relative;
+  top: 35.2rem;
+  left: -28.7rem;
+}
+@media(min-width:40rem){
+  .copyright{
+    top: 299px;
+    left: -52rem;
+  }
+}
+.copy_head_1{
+  font-size:12px;
+  color:grey;
+  position: relative;
+  left: 417px;
+  top: 13px;
+}
+.copy_head_2{
+  font-size:12px;
+  color: white;
+  position: relative;
+  left: 424px;
+  top: 14px;
+}
+.copy_head_3{
+  font-size:12px;
+  color:grey;
+  position: relative;
+  left: 442px;
+  top: 12px;
+}
+
+.footer_list{
+  overflow-y: hidden;
+  list-style: none;
+  margin-left: 25px;
+  position: relative;
+  left: 886px;
+  top: -12px;
+  height: 35px;
+ 
+
+
+}
+
+
+.footer_list a{
+  color:grey;
+  text-decoration: none;
+  font-size: 10px;
+}
+.footer_list a:hover,
+.footer_list a:active{
+color:white;
+}
+
+
+.open{
+  display: block !important;
+  /* we are overwriting the display none to block by using*/
+  opacity:1 !important;
+  transform: translateY(0) !important;
+}
+
