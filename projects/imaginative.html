@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href=../shared.css>
@@ -12,8 +12,14 @@
     <title>Document</title>
 </head>
 <body>
+   <div class="backdrop"></div>
     <header class="main-header">
   <div>
+   <button class="toggle-button">
+      <span class="toggle-button__bar"></span>
+      <span class="toggle-button__bar"></span>
+      <span class="toggle-button__bar"></span>
+  </button>
     <a href="../index2.html" class="main_heading" style="text-decoration: none;">
         <!-- <img src="logo2.png" alt="uhost- your favrt company" class="logo"> -->
     <h1 class="logo_h1">THE CRAFT</h1>
@@ -121,6 +127,103 @@
    </nav>
 </header>
 
+<nav class="mobile-nav">
+   <ul class="mobile-nav__items">
+      <li class="mobile-nav__item">          
+         <div class="dropdown">
+            <button class="dropbtn">HOME</button>
+            <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            </div>
+         </div>
+         </li>
+
+         <li class="mobile-nav__item">          
+            <div class="dropdown">
+               <button class="dropbtn2">HEADERS</button>
+               <div class="dropdown-content">
+               <a href="#">Link 1</a>
+               <a href="#">Link 2</a>
+               <a href="#">Link 3</a>
+               </div>
+            </div>
+         </li>
+         <li class="mobile-nav__item">          
+            <div class="dropdown">
+               <button class="dropbtn2">PAGES</button>
+               <div class="dropdown-content">
+               <a href="#">Link 1</a>
+               <a href="#">Link 2</a>
+               <a href="#">Link 3</a>
+               </div>
+            </div>
+         </li>
+            <li class="mobile-nav__item">          
+               <div class="dropdown">
+                  <button class="dropbtn2">PORTFOLIO</button>
+                  <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                  </div>
+               </div>
+            </li>
+            <li class="mobile-nav__item">          
+               <div class="dropdown">
+                  <button class="dropbtn2">BLOG</button>
+                  <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                  </div>
+               </div>
+            </li>
+            <li class="mobile-nav__item">          
+               <div class="dropdown">
+                  <button class="dropbtn2">SHOP</button>
+                  <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                  </div>
+               </div>
+            </li>
+            <li class="mobile-nav__item">          
+               <div class="dropdown">
+                  <button class="dropbtn2">ELEMENTS</button>
+                  <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                  </div>
+               </div>
+            </li>
+              <!-- Cart-->
+      <li class="mobile-nav__item">    
+     <div class="icon-cart-2" style="clear: left; float: left">
+      <div class="cart-line-4" style="background-color: rgb(146, 141, 141)"></div>
+      <div class="cart-line-5" style="background-color: rgb(146, 141, 141)"></div>
+      <div class="cart-line-6" style="background-color: rgb(146, 141, 141)"></div>
+      <div class="cart-wheel-7" style="background-color: rgb(146, 141, 141)"></div>
+    </div>
+    </li>
+    <!-- End -->
+
+
+   <!-- Search -->
+   <li class="mobile-nav__item">    
+    <div class="container-2">
+      <input type="text" placeholder="Search...">
+      <div class="search-2"></div>
+    </div>
+    </li>
+
+       <!-- End -->
+     </ul>
+
+</nav>
 <main>
 <section class="web__creats">
    <h1 class="web_creat">
@@ -131,13 +234,13 @@
    <div>
       <ul class="images__web">
          <li class="image__web">
-      <img src="../flickity images/text.jpg"  style="height:500px; width:900px;" class="beauty__web">
+      <img src="../flickity images/text.jpg"  style="height:23rem; width:23rem; position: absolute; left:-1rem; top:2rem;" class="beauty__web">
          </li>
          <li class="image__web">
-      <img src="../flickity images/desk.jpg"  style="height:500px; width:900px;" class="desk__web">
+      <img src="../flickity images/desk.jpg"  style="height:23rem; width:23rem; position: absolute; left:-1rem; top:26rem;" class="desk__web">
    </li>
    <li class="image__web">
-      <img src="../flickity images/mountain.jpg"  style="height:500px; width:900px;" class="mount__web">
+      <img src="../flickity images/mountain.jpg"  style="height:23rem; width:23rem; position: absolute; left:-1rem; top:50rem;" class="mount__web">
    </li>
    </ul>
    </div>
@@ -322,7 +425,7 @@
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 
-<!-- <script src="shared.js"></script> -->
+<script src="project.js"></script>
 
 
 </html>

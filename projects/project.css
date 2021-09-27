@@ -14,10 +14,18 @@
     top: 80px;
     margin: 2px 160px;
     width: 99.90%;
-    padding: 28px 717px;
+    padding: 28px 95px;
     margin-left: -9px;
     font-size: 20px;
 }
+@media(min-width:40rem){
+    .web_creat{
+        padding: 28px 717px;
+    }
+}
+
+
+
 .images__web{
 position:absolute;
 top:200px;
@@ -30,9 +38,17 @@ padding: 30px 226px;
 
 .projecs_info{
    position:absolute;
-   left:74rem;
-   top:16rem;
+   left: -1rem;
+   top: 88rem;
    color:rgb(163, 162, 162);
+}
+@media(min-width:40rem){
+    .projecs_info{
+      
+        left:74rem;
+        top:16rem;
+  
+     }
 }
 
 .proec_info{
