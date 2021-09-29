@@ -19,7 +19,7 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px; */
-    /* overflow-x: hidden;  */
+    overflow-x: hidden; 
 }
 
 
@@ -1285,4 +1285,3 @@ color:white;
   opacity:1 !important;
   transform: translateY(0) !important;
 }
-
